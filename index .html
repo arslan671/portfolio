@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Arslan Anjum — Portfolio</title>
+  <meta name="description" content="Marketing Manager at CSN Group & Freelance Digital Marketer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b0d12; --card:#12161f; --muted:#8b94a7; --text:#e9eef9; --accent:#6ce5b1; --accent2:#69a7ff; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;gap:16px;align-items:center;padding:22px;border:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));backdrop-filter:blur(6px);border-radius:16px}
+    .avatar-wrap{position:relative;width:92px;height:92px;border-radius:999px;overflow:hidden;border:2px solid rgba(255,255,255,.12);box-shadow:0 4px 20px rgba(0,0,0,.35)}
+    .avatar-wrap img{width:100%;height:100%;object-fit:cover}
+    .name{font-weight:800;font-size:26px;letter-spacing:.3px}
+    .role{color:var(--muted);font-weight:500}
+    .cta{margin-left:auto;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:var(--card);color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0d12}
+    .hero{margin:28px 0;padding:28px;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:radial-gradient(1200px 600px at 100% -50%,rgba(105,167,255,.12),rgba(0,0,0,0)),radial-gradient(800px 400px at -10% 0%,rgba(108,229,177,.12),rgba(0,0,0,0)),var(--card)}
+    .hero h1{font-size:40px;line-height:1.1;margin:0 0 12px 0}
+    .hero p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
+    .section-title{font-size:18px;font-weight:800;margin:0 0 12px 0;letter-spacing:.2px}
+    .services .item{padding:16px;border:1px dashed rgba(255,255,255,.12);border-radius:14px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;font-size:12px;margin:4px 6px 0 0}
+    .logos{display:flex;gap:14px;flex-wrap:wrap} .logo{padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);color:#cfe0ff;font-weight:700}
+    .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .tile{border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;background:#101420}
+    .tile img{width:100%;height:180px;object-fit:cover;display:block;filter:saturate(1.05)}
+    .tile .meta{padding:12px}
+    .form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0f1320;color:#e9eef9}
+    label{font-size:13px;color:var(--muted)}
+    .note{font-size:12px;color:var(--muted)}
+    footer{margin-top:32px;padding:18px;color:var(--muted);text-align:center}
+    @media(min-width:900px){ .col-4{grid-column:span 4} .col-8{grid-column:span 8} .col-6{grid-column:span 6} .col-12{grid-column:span 12} }
+    @media(max-width:899px){ .grid{grid-template-columns:1fr} .col-4,.col-8,.col-6,.col-12{grid-column:span 1} .hero h1{font-size:32px} .cta{margin-left:0} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar-wrap"><img src="profile.jpg" alt="Muhammad Arslan Anjum profile photo"></div>
+      <div>
+        <div class="name">Muhammad Arslan Anjum</div>
+        <div class="role">Marketing Manager • CSN Group | Digital Marketing Freelancer</div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Hire Me</a>
+        <a class="btn" href="https://wa.me/923208551278" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="btn" style="background:rgba(255,255,255,.06)">Available for new projects</span>
+      <h1>Performance‑driven digital marketing for automotive & lifestyle brands.</h1>
+      <p>BS Software Engineering (CUST). 3+ years of experience in digital marketing: paid ads, social media, SEO & content. Currently serving as <strong>Marketing Manager at CSN Group</strong> while also taking on freelance projects for brands in Pakistan.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card col-8">
+        <h2 class="section-title">About</h2>
+        <p class="muted">I help brands grow with data‑backed campaigns, engaging content, and clear reporting. With a foundation in Software Engineering from <strong>Capital University of Science & Technology (CUST)</strong>, I bring a technical mindset to marketing—automations, analytics, and experimentation.</p>
+        <div style="margin-top:10px">
+          <span class="pill">Meta & Google Ads</span>
+          <span class="pill">SEO & Content</span>
+          <span class="pill">Social Media Strategy</span>
+          <span class="pill">Analytics & Reporting</span>
+          <span class="pill">Marketing Automation</span>
+        </div>
+      </div>
+
+      <div class="card col-4 services">
+        <h2 class="section-title">Services</h2>
+        <div class="item"><strong>Performance Ads</strong><br><span class="muted">Meta, Google, and YouTube campaigns to drive leads & sales.</span></div>
+        <div class="item" style="margin-top:12px"><strong>Social Media Management</strong><br><span class="muted">Content calendars, posting, community & DM handling.</span></div>
+        <div class="item" style="margin-top:12px"><strong>SEO & Content</strong><br><span class="muted">On‑page, blogs, basic technical fixes, and keyword strategy.</span></div>
+        <div class="item" style="margin-top:12px"><strong>Branding & Creatives</strong><br><span class="muted">Ad creatives, reels coordination, and brand kits.</span></div>
+      </div>
+
+      <div class="card col-12">
+        <h2 class="section-title">Clients • CSN Group</h2>
+        <p class="muted">Selected brands I’ve worked with as Marketing Manager and freelancer under CSN Group:</p>
+        <div class="logos">
+          <div class="logo">Car Specialist Network (i8)</div>
+          <div class="logo">MG Lounge — Lahore</div>
+          <div class="logo">Haval Experience — Islamabad</div>
+        </div>
+      </div>
+
+      <div class="card col-12">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <div class="tile">
+            <img src="profile.jpg" alt="MG Lounge campaign cover">
+            <div class="meta"><strong>MG Lounge — Lead Gen</strong><br><span class="muted">Reduced CPL ~35% via creative testing & landing tweaks.</span></div>
+          </div>
+          <div class="tile">
+            <img src="profile.jpg" alt="Haval Experience campaign cover">
+            <div class="meta"><strong>Haval Experience — Launch</strong><br><span class="muted">Awareness & test‑drive funnels with influencer seeding.</span></div>
+          </div>
+          <div class="tile">
+            <img src="profile.jpg" alt="CSN i8 offer campaign cover">
+            <div class="meta"><strong>CSN (i8) — Offers</strong><br><span class="muted">Seasonal service promos with lookalike targeting.</span></div>
+          </div>
+        </div>
+        <p class="note">Send me your campaign images later; I’ll replace these thumbnails.</p>
+      </div>
+
+      <div class="card col-6">
+        <h2 class="section-title">Skills & Tools</h2>
+        <ul>
+          <li>Meta Ads Manager, Google Ads, YouTube</li>
+          <li>GA4, Tag Manager, Data Studio</li>
+          <li>Canva, CapCut coordination, Figma basics</li>
+          <li>SEO: Search Console, Ahrefs/alternatives</li>
+          <li>No‑code automations (Zapier/Make)</li>
+        </ul>
+      </div>
+
+      <div id="contact" class="card col-6">
+        <h2 class="section-title">Contact</h2>
+        <form class="form" method="GET" action="mailto:arslananjum671@gmail.com" enctype="text/plain">
+          <label>Name<input name="name" placeholder="Your Name" required></label>
+          <label>Email<input type="email" name="email" placeholder="your@email.com" required></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea></label>
+          <div>
+            <button class="btn primary" type="submit">Send Email</button>
+            <a class="btn" href="https://wa.me/923208551278" target="_blank" rel="noopener">WhatsApp +923208551278</a>
+          </div>
+          <div class="note">Tip: Replace the email with your own later for direct submissions.</div>
+        </form>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Muhammad Arslan Anjum • Based in Pakistan</footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
